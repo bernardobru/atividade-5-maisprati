@@ -1,0 +1,16 @@
+{
+    "name": "multi-app",
+    "version": "1.0.0",
+    "scripts": {
+      "dev": "concurrently \"npm run client\" \"npm run server\"",
+      "client": "cd client && npm run dev",
+      "server": "cd server && npm run dev",
+      "install:all": "npm install --prefix client && npm install --prefix server",
+      "build:client": "cd client && npm run build",
+      "lint:client": "cd client && npm run lint",
+      "preview:client": "cd client && npm run preview"
+    },
+    "devDependencies": {
+      "concurrently": "^8.2.2"
+    }
+  }
