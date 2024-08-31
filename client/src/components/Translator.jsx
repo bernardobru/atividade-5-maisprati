@@ -2,7 +2,7 @@
 import { useState } from 'react'; 
 import axios from 'axios'; 
 import useVerifyJWT from '../assets/hooks/useVerifyJWT'; 
-import { Container, Title, Label, Select, Input, Button, TranslatedText} from "../assets/styles/LanguageTranslator-styling";
+import { Container, Title, Label, Select, Input, Button, TranslatedText} from "../assets/styles/translator";
 
 //Função do componente tradutor
 function Translator () {
@@ -16,7 +16,7 @@ function Translator () {
   const translateLanguage = async () => {
     const tokenStatus = await verifyJWT(); // Verifica o token
 
-    if (tokenStatus !== true) { location.reload() } // Se o token for inválido, não procede com a tradução
+    if (tokenStatus !== true) location.reload() // Se o token for inválido, não procede com a tradução
 
     try { // Tenta fazer a requisição para a API
       const response = await axios.get('https://api.mymemory.translated.net/get', {

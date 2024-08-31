@@ -1,7 +1,7 @@
 //Importa as dependências necessárias o os estilos
 import { useState } from 'react'; 
 import axios from 'axios'; 
-import { Container, Title, Input, Button, MoviesContainer, MovieCard } from '../assets/styles/MovieSearchEngine-styling'
+import { Container, Title, Input, Button, MoviesContainer, MovieCard } from '../assets/styles/movie_search'
 import useVerifyJWT from "../assets/hooks/useVerifyJWT";
 
 //Função do componente de pesquisa de filmes

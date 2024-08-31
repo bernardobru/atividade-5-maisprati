@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import  useVerifyJWT  from "../assets/hooks/useVerifyJWT";
-import { NavBar, NavBarToggle, StyledLink} from "../assets/styles/NavBar-styling";
+import { NavBar, NavBarToggle, StyledLink} from "../assets/styles/navbar";
 import {
     FaQrcode,
     FaSearch,

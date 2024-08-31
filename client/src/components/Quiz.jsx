@@ -1,6 +1,6 @@
 //Importa as dependêncais necessárias e os estilos
 import { useState } from 'react';
-import { Container, Title, Question, OptionButton, Score } from '../assets/styles/QuizApp-styling'
+import { Container, Title, Question, OptionButton, Score } from '../assets/styles/quiz'
 import useVerifyJWT from '../assets/hooks/useVerifyJWT'; 
 
 //Função do componente de quiz

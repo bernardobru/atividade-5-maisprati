@@ -16,7 +16,7 @@ app.use(cors({
 const SECRET_KEY = "+Prati_2024";
 
 const users = [
-    {id: 1, username: 'admin', password: "password"}
+    {id: 1, username: 'admin', password: "12345"}
 ];
 
 app.post('/login', (req, res) => {

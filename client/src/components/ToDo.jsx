@@ -1,7 +1,7 @@
 //Importa as dependências necessárias e os estilos
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import { Container, Title, Input, Button, TaskList, TaskItem, EditInput } from '../assets/styles/TodoApp-styling'
+import { Container, Title, Input, Button, TaskList, TaskItem, EditInput } from '../assets/styles/to_do'
 import useVerifyJWT from "../assets/hooks/useVerifyJWT";
 const API_URL = 'http://localhost:3000/tasks';
 

@@ -1,6 +1,6 @@
 //Importa as dependências necessárias para o carrossel
 import { useNavigate } from "react-router-dom"; 
-import { CarouselContainer, CustomCarousel, CarouselItem } from "../assets/styles/Carousel-styling";
+import { CarouselContainer, CustomCarousel, CarouselItem } from "../assets/styles/carousel";
 import useVerifyJWT from "../assets/hooks/useVerifyJWT"; 
 
 //Função do componente do carrossel

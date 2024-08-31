@@ -1,7 +1,7 @@
 //Importa as dependências e o estilo
 import { useState } from 'react';
 import axios from 'axios';
-import { LoginContainer, LoginForm, Input, Button} from '../assets/styles/Login-styling'
+import { LoginContainer, LoginForm, Input, Button} from '../assets/styles/login'
 
 //Função do componente de login
 function Login ({ onLogin }) {
@@ -45,13 +45,13 @@ function Login ({ onLogin }) {
           type="text"
           value={username} 
           onChange={(e) => setUsername(e.target.value)} 
-          placeholder="Username"
+          placeholder="admin"
         />
         <Input
           type="password"
           value={password} 
           onChange={(e) => setPassword(e.target.value)}
-          placeholder="Password" 
+          placeholder="12345" 
         />
         <Button type="submit">Login</Button>
       </LoginForm>

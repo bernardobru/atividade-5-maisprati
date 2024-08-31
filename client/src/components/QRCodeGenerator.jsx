@@ -1,7 +1,7 @@
 //Importa os estilos e as dependências
 import { useState } from 'react';
 import QRCode from 'qrcode.react';
-import { Container, Title, Input, QRCodeContainer } from '../assets/styles/QRCodeGenerator-styling';
+import { Container, Title, Input, QRCodeContainer } from '../assets/styles/QR_code_generator';
 
 //Função do componente do gerador de QRcode
 function QRCodeGenerator () {

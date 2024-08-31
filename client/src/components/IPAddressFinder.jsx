@@ -1,7 +1,7 @@
 import { useState } from 'react'; // Importa o hook useState do React
 import axios from 'axios'; // Importa a biblioteca axios para fazer requisições HTTP
 import useVerifyJWT from '../assets/hooks/useVerifyJWT'; // Hook para fazer validação do JWT
-import { Container, Title, Input, Button, ResultsContainer} from '../assets/styles/IPAddressFinder'
+import { Container, Title, Input, Button, ResultsContainer} from '../assets/styles/IP_address_finder'
 
 // Componente principal IPAddressFinder
 function IPAddressFinder () {

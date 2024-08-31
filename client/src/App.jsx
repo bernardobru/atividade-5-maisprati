@@ -18,7 +18,7 @@ import Translator from "./components/Translator";
 import Login from "./components/Login";
 import Carousel from "./components/Carousel";
 import Navbar from "./components/Navbar";
-import { AppContainer, MainContent, Footer, ReturnButton } from "./assets/styles/App-styling";
+import { AppContainer, MainContent, Footer, ReturnButton } from "./assets/styles/app";
 import "./App.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
