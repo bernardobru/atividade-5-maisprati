@@ -5,14 +5,12 @@ const cors = require('cors')
 const app = express();
 const PORT = 3000
 
-
 app.use(bodyParser.json());
 
-
 app.use(cors({
-    origin: 'http://localhost:5173', // Permite acesso do frontend em localhost:5173
-    methods: ['GET', 'POST', 'PUT', 'DELETE'], // Métodos HTTP permitidos
-    allowedHeaders: ['Content-Type', 'Authorization'] // Cabeçalhos permitidos
+    origin: 'http://localhost:5173', 
+    methods: ['GET', 'POST', 'PUT', 'DELETE'], 
+    allowedHeaders: ['Content-Type', 'Authorization']
 }))
 
 const SECRET_KEY = "+Prati_2024";
@@ -57,7 +55,6 @@ app.listen(PORT, () => {
     console.log(`Server running on http://Localhost:${PORT}`);
 });
 
-// Requisições do TodoAPP
 let tasks = []
 
 const updateIps = () => {
@@ -80,7 +77,6 @@ app.post('/tasks', (req, res) => {
 app.delete('/tasks/:id', (req, res) => {
     const taskId = req.params.id;
     const initialLength = tasks.length;
-    // Filtrando as tarefas para remover a que tem o id correspondente
     tasks = tasks.filter(task => task.id != taskId);
     if (tasks.length < initialLength) {
         updateIps()

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom"
 
-// Estiliza a barra de navegação.
+//Estiliza a barra de navegação
 export const NavBar = styled.div`
   width: 240px;
   background-color: #2c3e50;
@@ -23,7 +23,7 @@ export const NavBar = styled.div`
   }
 `;
 
-// Estiliza o botão de alternância da barra de navegação.
+//Estiliza o botão que abre ou fecha a barra de navegação
 export const NavBarToggle = styled.div`
   display: none;
   position: absolute;
@@ -37,7 +37,7 @@ export const NavBarToggle = styled.div`
   }
 `;
 
-// Estiliza os links na barra de navegação.
+//Estiliza os links da barra de navegação.
 export const StyledLink = styled(Link)`
   color: white;
   text-decoration: none;

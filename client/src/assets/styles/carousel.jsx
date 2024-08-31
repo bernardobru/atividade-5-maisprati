@@ -1,8 +1,7 @@
 import styled from "styled-components";
 import { Carousel } from "react-responsive-carousel";
 
-
-// Estiliza o contêiner do carrossel.
+//Estiliza o container do carrossel
 export const CarouselContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -16,7 +15,7 @@ export const CarouselContainer = styled.div`
   padding: 20px;
 `;
 
-// Estiliza o carrossel personalizado.
+//Estiliza um componente do carrossel da biblioteca de carrossel do react
 export const CustomCarousel = styled(Carousel)`
   width: 100%;
   .carousel-status {
@@ -24,7 +23,7 @@ export const CustomCarousel = styled(Carousel)`
   }
 `;
 
-// Estiliza os itens individuais do carrossel.
+//Estiliza os itens do carrossel
 export const CarouselItem = styled.div`
   display: flex;
   flex-direction: column;

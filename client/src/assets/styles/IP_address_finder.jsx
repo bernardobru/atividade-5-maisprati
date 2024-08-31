@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-// Define o estilo do container principal
+//Cria e estiliza o container da página 
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -14,7 +14,7 @@ export const Container = styled.div`
   margin: 50px auto;
 `;
 
-// Define o estilo do título
+//Cria e estiliza um componente para o título
 export const Title = styled.h2`
   color: #333;
   margin-bottom: 20px;
@@ -22,7 +22,7 @@ export const Title = styled.h2`
   text-align: center;
 `;
 
-// Define o estilo do campo de entrada
+//Cria e estiliza os inputs
 export const Input = styled.input`
   margin-bottom: 20px;
   padding: 12px;
@@ -39,7 +39,7 @@ export const Input = styled.input`
   }
 `;
 
-// Define o estilo do botão
+//Cria e estiliza os botões
 export const Button = styled.button`
   padding: 12px 20px;
   background-color: #007bff;
@@ -55,7 +55,7 @@ export const Button = styled.button`
   }
 `;
 
-// Define o estilo do container de resultados
+//Cria e estiliza um container para os resultados da pesquisa
 export const ResultsContainer = styled.div`
   margin-top: 20px;
   padding: 20px;

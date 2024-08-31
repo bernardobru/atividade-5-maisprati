@@ -1,120 +1,112 @@
-// Importa a biblioteca styled-components para criar componentes estilizados.
 import styled from 'styled-components';
 
-// Cria um componente estilizado chamado Container usando styled-components.
-// Esse componente estiliza uma <div> com flexbox para centralizar o conteúdo e adicionar padding, bordas e sombras.
+//Estiliza o container da página de to-do
 export const Container = styled.div`
-  display: flex; // Define o layout como flexbox.
-  flex-direction: column; // Organiza os itens em uma coluna.
-  align-items: center; // Alinha os itens no centro horizontalmente.
-  justify-content: center; // Alinha os itens no centro verticalmente.
-  padding: 40px; // Adiciona padding de 40px ao redor do conteúdo.
-  background: #fff; // Define o fundo como branco.
-  border-radius: 15px; // Adiciona bordas arredondadas de 15px.
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); // Adiciona uma sombra sutil ao redor do componente.
-  max-width: 500px; // Define a largura máxima como 500px.
-  margin: 50px auto; // Adiciona margem de 50px acima e abaixo e centraliza horizontalmente.
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+  max-width: 500px; 
+  margin: 50px auto;
 `;
 
-// Cria um componente estilizado chamado Title usando styled-components.
-// Esse componente estiliza um <h2> com cor, margem, tamanho da fonte e alinhamento.
+//Estiliza o título
 export const Title = styled.h2`
-  color: #333; // Define a cor do texto como um tom escuro de cinza.
-  margin-bottom: 20px; // Adiciona uma margem de 20px abaixo do título.
-  font-size: 24px; // Define o tamanho da fonte como 24px.
-  text-align: center; // Alinha o texto no centro horizontalmente.
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 24px; 
+  text-align: center; 
 `;
 
-// Cria um componente estilizado chamado Input usando styled-components.
-// Esse componente estiliza um <input> com padding, borda, bordas arredondadas, e sombra interna.
+//Estiliza os inputs
 export const Input = styled.input`
-  margin-bottom: 20px; // Adiciona uma margem de 20px abaixo do input.
-  padding: 12px; // Adiciona padding de 12px dentro do input.
-  border: 1px solid #ccc; // Define uma borda de 1px sólida e cinza clara.
-  border-radius: 5px; // Adiciona bordas arredondadas de 5px.
-  width: 100%; // Define a largura como 100% do contêiner pai.
-  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); // Adiciona uma sombra interna sutil.
-  font-size: 16px; // Define o tamanho da fonte como 16px.
-  transition: border-color 0.3s; // Adiciona uma transição suave para a cor da borda.
+  margin-bottom: 20px; 
+  padding: 12px;
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  width: 100%; 
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); 
+  font-size: 16px; 
+  transition: border-color 0.3s; 
 
-  &:focus { // Aplica estilos ao input quando ele está em foco.
-    border-color: #007bff; // Muda a cor da borda para azul quando o input está em foco.
-    outline: none; // Remove o contorno padrão quando o input está em foco.
+  &:focus { 
+    border-color: #007bff; 
+    outline: none; 
   }
 `;
 
-// Cria um componente estilizado chamado Button usando styled-components.
-// Esse componente estiliza um <button> com padding, cor de fundo, cor do texto, bordas e efeitos de transição.
+// Estiliza os botões
 export const Button = styled.button`
-  padding: 12px 20px; // Adiciona padding de 12px verticalmente e 20px horizontalmente.
-  background-color: #007bff; // Define a cor de fundo como azul.
-  color: white; // Define a cor do texto como branco.
-  border: none; // Remove a borda padrão do botão.
-  border-radius: 5px; // Adiciona bordas arredondadas de 5px.
-  cursor: pointer; // Define o cursor como uma mão ao passar sobre o botão.
-  font-size: 16px; // Define o tamanho da fonte como 16px.
-  transition: background-color 0.3s; // Adiciona uma transição suave para a cor de fundo.
-  margin-bottom: 20px; // Adiciona uma margem de 20px abaixo do botão.
+  padding: 12px 20px; 
+  background-color: #007bff;
+  color: white; 
+  border: none;
+  border-radius: 5px; 
+  cursor: pointer; 
+  font-size: 16px; 
+  transition: background-color 0.3s;
+  margin-bottom: 20px;
 
-  &:hover { // Aplica estilos ao botão quando o cursor está sobre ele.
-    background-color: #0056b3; // Muda a cor de fundo para um tom mais escuro de azul.
+  &:hover {
+    background-color: #0056b3; 
   }
 `;
 
-// Cria um componente estilizado chamado TaskList usando styled-components.
-// Esse componente estiliza uma <ul> para listar as tarefas sem estilo de lista padrão.
+//Estiliza a lista de tarefas
 export const TaskList = styled.ul`
-  list-style-type: none; // Remove os pontos de lista padrão.
-  padding: 0; // Remove o padding padrão.
-  width: 100%; // Define a largura como 100% do contêiner pai.
+  list-style-type: none; 
+  padding: 0; 
+  width: 100%; 
 `;
 
-// Cria um componente estilizado chamado TaskItem usando styled-components.
-// Esse componente estiliza um <li> com fundo, bordas arredondadas, padding, margem, sombra e efeitos de transição.
+//Estiliza as tarefas
 export const TaskItem = styled.li`
-  background: #f9f9f9; // Define o fundo como um tom muito claro de cinza.
-  border-radius: 5px; // Adiciona bordas arredondadas de 5px.
-  padding: 10px; // Adiciona padding de 10px dentro do item.
-  margin-bottom: 10px; // Adiciona uma margem de 10px abaixo do item.
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Adiciona uma sombra sutil ao redor do item.
-  font-size: 16px; // Define o tamanho da fonte como 16px.
-  transition: background-color 0.3s; // Adiciona uma transição suave para a cor de fundo.
-  display: flex; // Define o layout como flexbox.
-  justify-content: space-between; // Distribui o espaço entre os itens do item.
-  align-items: center; // Alinha os itens no centro verticalmente.
+  background: #f9f9f9;
+  border-radius: 5px; 
+  padding: 10px; 
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  font-size: 16px; 
+  transition: background-color 0.3s; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
 
-  &:hover { // Aplica estilos ao item quando o cursor está sobre ele.
-    background-color: #f1f1f1; // Muda a cor de fundo para um tom ligeiramente mais escuro de cinza.
+  &:hover {
+    background-color: #f1f1f1; 
   }
 
-  button { // Estiliza os botões dentro do TaskItem.
-    margin-left: 10px; // Adiciona uma margem de 10px à esquerda do botão.
-    background: transparent; // Define o fundo como transparente.
-    border: none; // Remove a borda padrão do botão.
-    color: red; // Define a cor do texto como vermelho.
-    cursor: pointer; // Define o cursor como uma mão ao passar sobre o botão.
-    font-size: 16px; // Define o tamanho da fonte como 16px.
+  button { 
+    margin-left: 10px; 
+    background: transparent; 
+    border: none; 
+    color: red;
+    cursor: pointer;
+    font-size: 16px; 
 
-    &:hover { // Aplica estilos ao botão quando o cursor está sobre ele.
-      color: darkred; // Muda a cor do texto para um tom mais escuro de vermelho.
+    &:hover {
+      color: darkred; 
     }
   }
 `;
 
-// Cria um componente estilizado chamado EditInput usando styled-components.
-// Esse componente estiliza um <input> para edição de tarefas com padding, borda, bordas arredondadas e sombra interna.
+//Estiliza o input de editar a tarefa
 export const EditInput = styled.input`
-  margin-left: 10px; // Adiciona uma margem de 10px à esquerda do input.
-  padding: 6px; // Adiciona padding de 6px dentro do input.
-  border: 1px solid #ccc; // Define uma borda de 1px sólida e cinza clara.
-  border-radius: 5px; // Adiciona bordas arredondadas de 5px.
-  width: 60%; // Define a largura como 60% do contêiner pai.
-  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); // Adiciona uma sombra interna sutil.
-  font-size: 14px; // Define o tamanho da fonte como 14px.
-  transition: border-color 0.3s; // Adiciona uma transição suave para a cor da borda.
+  margin-left: 10px; 
+  padding: 6px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  width: 60%; 
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 14px; 
+  transition: border-color 0.3s; 
 
-  &:focus { // Aplica estilos ao input quando ele está em foco.
-    border-color: #007bff; // Muda a cor da borda para azul quando o input está em foco.
-    outline: none; // Remove o contorno padrão quando o input está em foco.
+  &:focus { 
+    border-color: #007bff;
+    outline: none; 
   }
 `;

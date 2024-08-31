@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-// Define o estilo do container principal
+//Estiliza o container da página do tradutor
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -14,7 +14,7 @@ export const Container = styled.div`
   margin: 50px auto;
 `;
 
-// Define o estilo do título
+//Estiliza o título
 export const Title = styled.h2`
   color: #333;
   margin-bottom: 20px;
@@ -22,14 +22,14 @@ export const Title = styled.h2`
   text-align: center;
 `;
 
-// Define o estilo do label
+//Estiliza a label das opções de línguas
 export const Label = styled.label`
   color: #555;
   font-size: 16px;
   margin-right: 10px;
 `;
 
-// Define o estilo do select
+//Estiliza a seleção
 export const Select = styled.select`
   margin-bottom: 20px;
   padding: 10px;
@@ -44,7 +44,7 @@ export const Select = styled.select`
   }
 `;
 
-// Define o estilo do campo de entrada
+//Estiliza o input do texto a ser traduzido
 export const Input = styled.input`
   margin-bottom: 20px;
   padding: 12px;
@@ -61,7 +61,7 @@ export const Input = styled.input`
   }
 `;
 
-// Define o estilo do botão
+//Estiliza os botões
 export const Button = styled.button`
   padding: 12px 20px;
   background-color: #007bff;
@@ -78,7 +78,7 @@ export const Button = styled.button`
   }
 `;
 
-// Define o estilo do texto traduzido
+//Estiliza o parágrafo com o texto traduzido
 export const TranslatedText = styled.p`
   color: #333;
   font-size: 18px;

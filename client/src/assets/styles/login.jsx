@@ -1,7 +1,7 @@
-import styled from 'styled-components'; // Importa styled-components para estilizar os componentes
+import styled from 'styled-components';
 
 
-// Define o estilo do container principal do login
+//Estiliza o container da página de login
 export const LoginContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -11,7 +11,7 @@ export const LoginContainer = styled.div`
   background-color: #f0f0f0;
 `;
 
-// Define o estilo do formulário de login
+//Estiliza o formulário de login
 export const LoginForm = styled.form`
   display: flex;
   flex-direction: column;
@@ -22,7 +22,7 @@ export const LoginForm = styled.form`
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 `;
 
-// Define o estilo do campo de entrada
+//Estiliza os inputs
 export const Input = styled.input`
   margin-bottom: 10px;
   padding: 10px;
@@ -31,7 +31,7 @@ export const Input = styled.input`
   width: 200px;
 `;
 
-// Define o estilo do botão
+//Estiliza os botões
 export const Button = styled.button`
   padding: 10px 20px;
   background-color: #007bff;

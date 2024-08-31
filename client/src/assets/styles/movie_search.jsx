@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-// Define o estilo do container principal
+//Estiliza o container da página de pesquisas de filmes
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -13,7 +13,7 @@ export const Container = styled.div`
   margin: 50px auto;
 `;
 
-// Define o estilo do título
+//Estiliza o título
 export const Title = styled.h2`
   color: #333;
   margin-bottom: 20px;
@@ -21,7 +21,7 @@ export const Title = styled.h2`
   text-align: center;
 `;
 
-// Define o estilo do campo de entrada
+//Estiliza os inputs
 export const Input = styled.input`
   margin-bottom: 20px;
   padding: 12px;
@@ -38,7 +38,7 @@ export const Input = styled.input`
   }
 `;
 
-// Define o estilo do botão
+//Estiliza os botões
 export const Button = styled.button`
   padding: 12px 20px;
   background-color: #007bff;
@@ -54,25 +54,25 @@ export const Button = styled.button`
   }
 `;
 
-// Define o estilo do container dos filmes
+//Estiliza o container onde vai ter os filmes
 export const MoviesContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 20px;
-  max-height: 500px; /* Ajuste a altura máxima conforme necessário */
-  overflow-y: auto; /* Adiciona rolagem vertical se necessário */
+  max-height: 500px;
+  overflow-y: auto; 
   width: 100%;
 `;
 
-// Define o estilo do cartão de filme
+//Estiliza o cartão com as informações dos filmes
 export const MovieCard = styled.div`
   background: #f9f9f9;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 10px;
   padding: 20px;
-  width: 180px; /* Ajuste a largura conforme necessário */
+  width: 180px; 
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
 
@@ -83,7 +83,7 @@ export const MovieCard = styled.div`
 
   img {
     border-radius: 10px;
-    max-width: 100%; /* Ajusta o tamanho da imagem para caber dentro do cartão */
+    max-width: 100%; 
     height: auto;
     margin-bottom: 10px;
   }

@@ -1,3 +1,4 @@
+/* estiliza o body */
 body {
   margin: 0;
   padding: 0;
@@ -9,6 +10,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* estiliza os botões */
 button {
   cursor: pointer;
   padding: 10px 20px;
@@ -18,6 +20,7 @@ button {
   border-radius: 5px;
 }
 
+/* adiciona um efeito para quando o mouse é passado por cima do botão */
 button:hover {
   background-color: #0056b3;
 }

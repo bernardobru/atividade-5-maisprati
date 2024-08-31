@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-// Estiliza o contêiner principal do aplicativo.
+//Estiliza um o container para o app.
 export const AppContainer = styled.div`
   display: flex;
   flex-direction: row;
@@ -9,7 +9,7 @@ export const AppContainer = styled.div`
   background-color: #f0f0f0;
 `;
 
- // Estiliza o conteúdo principal do aplicativo.
+//Estiliza uma div para o conteúdo principal
 export const MainContent = styled.div`
   flex-grow: 1;
   display: flex;
@@ -21,7 +21,7 @@ export const MainContent = styled.div`
   overflow: hidden;
 `;
 
-// Estiliza o rodapé do aplicativo.
+//Estiliza o rodapé
 export const Footer = styled.div`
   width: 100%;
   background-color: #2c3e50;
@@ -37,7 +37,7 @@ export const Footer = styled.div`
   }
 `;
 
-// Estiliza o botão de retorno.
+//Estiliza o botão de retorno 
 export const ReturnButton = styled.button`
   padding: 10px 20px;
   background-color: #007bff;
